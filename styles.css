@@ -29,9 +29,6 @@ body {
   align-self: flex-end;
 }
 
-.fixed-pos {
-}
-
 .left {
   background-color: #1a243f;
   height: 100vh;
@@ -39,7 +36,7 @@ body {
 }
 .right {
   background-color: #f5f5f5;
-  height: 100vh;
+  height: 100%;
 }
 
 .nav {
@@ -162,7 +159,7 @@ body {
   font-size: 18px;
   font-family: DMSansRegular;
   margin-bottom: 16px;
-  width: 700px;
+  width: 600px;
 }
 
 ::placeholder {
@@ -177,7 +174,7 @@ body {
   padding: 10px 20px;
   outline: none;
   margin-bottom: 16px;
-  width: 700px;
+  width: 600px;
   height: 150px;
   border-top: 0;
   border-left: 1px solid #80808047;
@@ -188,7 +185,7 @@ body {
 
 .image-body {
   border: 1px dashed #80808047;
-  width: 700px;
+  width: 600px;
   background-color: white;
   height: 200px;
   position: relative;
@@ -202,19 +199,19 @@ label {
   margin-top: 90px;
   position: absolute;
   padding: 10px 16px;
-  left: 250px;
+  left: 200px;
   top: -10px;
 }
 
 .file-here {
   margin-top: 50px;
-  padding-left: 199px;
+  padding-left: 130px;
   color: #c0c0c0;
   font-family: DMSansRegular;
 }
 
 .text-icons {
-  width: 700px;
+  width: 600px;
   background-color: white;
   padding: 21px 21px 5px;
   border-top: 1px solid #80808047;
@@ -257,5 +254,6 @@ label {
 
   grid-template-columns: 1fr 1fr;
   margin-top: 30px;
-  max-width: 700px;
+  margin-bottom: 40px;
+  max-width: 600px;
 }
