@@ -21,7 +21,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: 1.3fr 2fr;
   gap: 0;
 }
 
@@ -29,10 +29,13 @@ body {
   align-self: flex-end;
 }
 
-.left {
+.fixed-pos {
   background-color: #1a243f;
+}
+
+.left {
   height: 100vh;
-  position: relative;
+  position: fixed;
 }
 .right {
   background-color: #f5f5f5;
@@ -120,7 +123,7 @@ body {
   line-height: 21px;
 }
 
-.skip {
+/* .skip {
   color: #fda700;
   font-size: 18px;
   font-family: DMSansRegular;
@@ -128,7 +131,7 @@ body {
   bottom: 2rem;
   right: 2rem;
   cursor: pointer;
-}
+} */
 
 .top-right {
   padding-top: 40px;
