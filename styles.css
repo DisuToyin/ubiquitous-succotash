@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: DMSansBold;
+  src: url("DMSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: DMSansMedium;
+  src: url("DMSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: DMSansRegular;
+  src: url("DMSans-Regular.ttf");
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 0;
+}
+
+.logo {
+  align-self: flex-end;
+}
+
+.fixed-pos {
+}
+
+.left {
+  background-color: #1a243f;
+  height: 100vh;
+  position: relative;
+}
+.right {
+  background-color: #f5f5f5;
+  height: 100vh;
+}
+
+.nav {
+  padding: 20px 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile {
+  align-self: center;
+  justify-self: end;
+  display: flex;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+.fullname {
+  color: #ffffff;
+  font-family: DMSansRegular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  align-self: center;
+}
+
+.initials {
+  border: 1px solid white;
+  padding: 6px 5px;
+  background-color: #ffffff21;
+  border-radius: 15px;
+  color: white;
+  font-size: 13px;
+}
+
+.question {
+  border: 1px solid white;
+  padding: 6px 5px;
+
+  border-radius: 15px;
+  color: white;
+  font-size: 13px;
+  margin-right: 1rem;
+}
+
+.welcome {
+  padding: 150px 60px;
+  color: #ffffff;
+  font-family: DMSansRegular;
+}
+
+.bodyclass-size-welcome {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.welcome-header {
+  font-size: 28px;
+  font-family: DMSansBold;
+  margin-bottom: 20px;
+}
+
+.action-text-1 {
+  padding-left: 20px;
+  font-size: 19px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.action-text-2 {
+  font-size: 19px;
+  margin-bottom: 20px;
+  padding-left: 32px;
+  cursor: pointer;
+}
+
+.bodyclass-size {
+  margin-top: 20px;
+  max-width: 25rem;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.skip {
+  color: #fda700;
+  font-size: 18px;
+  font-family: DMSansRegular;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.top-right {
+  padding-top: 40px;
+  padding-left: 70px;
+  font-size: 20px;
+  font-family: DMSansBold;
+  color: #000000;
+  display: flex;
+  gap: 26px;
+  margin-bottom: 32px;
+}
+
+.project-form {
+  padding-left: 70px;
+}
+
+.project-name {
+  font-size: 14px;
+  font-family: DMSansBold;
+  margin-bottom: 8px;
+}
+
+.project-input {
+  padding: 10px 20px;
+  width: 80%;
+  border: 1px solid #80808047;
+  outline: none;
+  font-size: 18px;
+  font-family: DMSansRegular;
+  margin-bottom: 16px;
+  width: 700px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8080806b;
+  opacity: 1; /* Firefox */
+}
+
+#project-desc {
+  font-family: DMSansRegular;
+  font-size: 18px;
+  padding: 10px 20px;
+  outline: none;
+  margin-bottom: 16px;
+  width: 700px;
+  height: 150px;
+  border-top: 0;
+  border-left: 1px solid #80808047;
+  border-right: 1px solid #80808047;
+  border-bottom: 1px solid #80808047;
+  resize: none;
+}
+
+.image-body {
+  border: 1px dashed #80808047;
+  width: 700px;
+  background-color: white;
+  height: 200px;
+  position: relative;
+}
+
+label {
+  background-color: #f8f7f7;
+  color: #7e7e7e;
+  font-family: DMSansRegular;
+  cursor: pointer;
+  margin-top: 90px;
+  position: absolute;
+  padding: 10px 16px;
+  left: 250px;
+  top: -10px;
+}
+
+.file-here {
+  margin-top: 50px;
+  padding-left: 199px;
+  color: #c0c0c0;
+  font-family: DMSansRegular;
+}
+
+.text-icons {
+  width: 700px;
+  background-color: white;
+  padding: 21px 21px 5px;
+  border-top: 1px solid #80808047;
+  border-left: 1px solid #80808047;
+  border-right: 1px solid #80808047;
+  border-bottom: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.create-btn {
+  width: fit-content;
+  justify-self: self-end;
+  padding: 10px;
+  font-size: 17px;
+  font-family: DMSansBold;
+  border: 0;
+  color: #000000;
+  background-color: #fda700;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: #ffbe3d;
+}
+
+.go-back {
+  width: fit-content;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #000000;
+  font-family: DMSansBold;
+  color: #000000;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.btns {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  max-width: 700px;
+}
